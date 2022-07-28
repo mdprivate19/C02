@@ -1,0 +1,103 @@
+ex00
+
+#include <stdio.h>
+int	main()
+{
+	char	src[] = "trop complique";
+	char	dest[255] = "";
+	printf("%s", ft_strcpy(dest, src));
+}
+
+ex01
+
+#include <stdio.h>
+int	main(void)
+{
+	char	src[] = "ca fonctionne";
+	char	dest[102] = "";
+	printf("%s", ft_strncpy(dest, src, 103));
+}
+
+ex02
+
+#include <stdio.h>
+int	main()
+{
+	char	*c = "";
+
+	printf("%d", ft_str_is_alpha(c));
+	
+}
+
+ex03
+
+#include <stdio.h>
+int	main()
+{
+	char	*c = "2i56";
+
+	printf("%d", ft_str_is_numeric(c));
+}
+
+ex04
+
+#include <stdio.h>
+int	main()
+{
+	char	*c = "awer";
+
+	printf("%d", ft_str_is_lowercase(c));
+}
+
+ex05
+
+#include <stdio.h>
+int	main()
+{
+	char	*c = "";
+
+	printf("%d", ft_str_is_uppercase(c));
+}
+
+ex06
+
+#include <stdio.h>
+int	main()
+{
+	char	*c = "€";
+	
+	printf("%d", ft_str_is_printable(c));
+}
+
+ex07
+
+#include <stdio.h>
+int	main()
+{
+	char str[] = "00%^(^&^THFYYUfhrghrg3654";
+
+	printf("%s", ft_strupcase(str));
+	return (0);
+}
+
+ex08
+
+#include <stdio.h>
+int	main()
+{
+	char	str[] = "THJR^%*%*YFYJYfDRGdhdeufhe645";
+
+	printf("%s", ft_strlowcase(str));
+	return (0);
+}
+
+ex09
+
+#include <stdio.h>
+int	main()
+{
+	char	str[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+	
+	printf("%s", ft_strcapitalize(str));
+	return (0);
+}
